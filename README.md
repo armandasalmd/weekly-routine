@@ -1,5 +1,4 @@
-"# weekly_routine" 
-# Intersection solver - KET
+# Weekly routine
 
 So far the biggest project I ever made. For precise description read [Google Play](https://play.google.com/store/apps/details?id=com.armandasalmd.weeklyroutine&rdid=com.armandasalmd.weeklyroutine)
 
