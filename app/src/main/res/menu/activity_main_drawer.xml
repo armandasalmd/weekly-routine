@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@mipmap/ic_test"
+            android:checked="true"
+            android:title="@string/plans" />
+        <item
+            android:id="@+id/nav_special"
+            android:icon="@drawable/ic_important"
+            android:title="@string/specialEvents"/>
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/ic_list_check"
+            android:title="@string/todo"/>
+
+    </group>
+
+    <item android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@mipmap/ic_settings_black_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_guide"
+                android:icon="@mipmap/ic_info_outline_black_24dp"
+                android:title="@string/use_guide" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_guide"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/ic_exit_to_app_black_24dp"
+                android:title="@string/exit" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.armandasalmd.weeklyroutine">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="icon">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/MyTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".notification.NotifReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".notification.MyIntentService"
+            android:exported="false" />
+
+        <receiver android:name=".notification.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".notification.RebootService"
+            android:exported="false" />
+
+        <activity android:name=".TutorialActivity" />
+
+        <activity
+            android:name=".MySettingsActivity"
+            android:theme="@style/MyPreferencesTheme"
+            android:label="@string/settings" />
+    </application>
+
+</manifest>

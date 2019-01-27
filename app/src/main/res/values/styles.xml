@@ -1,0 +1,104 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/customPreferenceThemeOverlay</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="MyTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#000000</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Main activity theme -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Main toolbar theme -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- 7 days buttons style -->
+    <style name="check_button_style" parent="android:Widget">
+        <item name="android:layout_width">@dimen/add_event_cb_wh</item>
+        <item name="android:layout_height">@dimen/add_event_cb_wh</item>
+        <item name="android:layout_marginLeft">@dimen/add_event_cb_marginLR</item>
+        <item name="android:layout_marginBottom">@dimen/add_event_cb_marginB</item>
+        <item name="android:layout_marginTop">@dimen/add_event_cb_marginB</item>
+        <item name="android:background">@drawable/ring_button_style</item>
+    </style>
+
+    <!-- row textView style -->
+    <style name="rowTextTitle" parent="">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/row_title_size</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="rowTextNormal" parent="rowTextTitle">
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="rowTextSpecial" parent="rowTextTitle">
+        <item name="android:textColor">@color/colorRedDark</item>
+    </style>
+
+    <!-- cardview layout style -->
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">@dimen/card_content_paddingLR</item>
+        <item name="android:paddingRight">@dimen/card_content_paddingLR</item>
+        <item name="android:paddingTop">@dimen/card_content_paddingTB</item>
+        <item name="android:paddingBottom">@dimen/card_content_paddingTB</item>
+    </style>
+
+    <style name="text_info_content">
+        <item name="android:textColor">@color/colorBlackLight</item>
+        <item name="android:textSize">@dimen/content_text_size</item>
+    </style>
+
+    <!-- preference toolbar -->
+    <style name="MyPreferencesTheme" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/colorBlackLight</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="android:keyTextSize">5sp</item>
+        <item name="android:listSeparatorTextViewStyle">@style/ListSeparatorText</item>
+        <!-- This attribute alone sets the colour of the text to the parent text colour-->
+        <item name="actionBarTheme">@style/MyPreferencesTheme.ActionBarTheme</item>
+    </style>
+
+    <style name="ListSeparatorText" parent="android:Widget.TextView"><!--parent is optional -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="MyPreferencesTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- THIS is where you can color the arrow -->
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="customPreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
+        <item name="preferenceFragmentListStyle">@style/customPreferenceFragmentList</item>
+    </style>
+    <style name="customPreferenceFragmentList">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <!-- alert dialog -->
+    <style name="myDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
+

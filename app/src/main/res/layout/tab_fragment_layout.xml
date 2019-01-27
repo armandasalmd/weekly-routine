@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/free_day_layout"
+        android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/cool_img_size"
+                android:layout_height="@dimen/cool_img_size"
+                android:src="@mipmap/emotion_cool"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free_day_text"
+                android:id="@+id/free_day_text"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="22sp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

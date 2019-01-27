@@ -1,0 +1,52 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:clipChildren="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="false">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.rahimlis.badgedtablayout.BadgedTabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:badgeBackgroundColor="@color/greay_semi_transparent"
+                app:badgeSelectedBackgroundColor="@color/black_semi_transparent"
+                app:badgeTextColor="@color/colorWhite"
+                app:tabMode="scrollable"
+                app:layout_scrollFlags="enterAlways|scroll"
+                app:tabIndicatorHeight="3dp"
+                app:tabGravity="fill"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+        <com.armandasalmd.weeklyroutine.classes.CustomViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:elevation="5dp"
+        android:src="@drawable/ic_add"
+        app:borderWidth="0dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

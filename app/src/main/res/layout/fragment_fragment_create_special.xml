@@ -1,0 +1,163 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    tools:context="com.armandasalmd.weeklyroutine.fragments.FragmentCreateSpecial">
+
+    <ScrollView
+        android:id="@+id/create_scroll_view"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/type_info_card" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/add_event_card_margin"
+                android:layout_marginLeft="@dimen/add_event_card_margin"
+                android:layout_marginRight="@dimen/add_event_card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:text="@string/add_event_days"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addButton"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/add"/>
+                    </LinearLayout>
+                    <!-- datu pridejimas i sarasa -->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerHorizontalView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"/>
+                    <!--<CalendarView
+                        android:id="@+id/calendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />-->
+                    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                        android:id="@+id/calendar"
+                        app:mcv_tileHeight="@dimen/calendar_height"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mcv_showOtherDates="out_of_range" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <include layout="@layout/time_choose_card" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/add_event_card_margin"
+                android:layout_marginLeft="@dimen/add_event_card_margin"
+                android:layout_marginRight="@dimen/add_event_card_margin">
+                <LinearLayout android:layout_height="wrap_content"
+                    style="@style/Widget.CardContent"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="@string/settings"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/time_to_check"
+                            android:text="@string/use_time_to"
+                            android:checked="false" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/use_notification"
+                            android:text="@string/use_notification"
+                            android:checked="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|end"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="10dp"
+        app:menu_labels_singleLine="true"
+        app:menu_icon="@drawable/ic_plus"
+
+
+        app:menu_colorNormal="@color/expandable_fab"
+        app:menu_colorPressed="@color/colorGreen"
+        app:menu_backgroundColor="@color/fab_dim"
+        app:menu_fab_label="@string/close">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimaryLight"
+            app:fab_colorPressed="@color/colorPrimaryPressed"
+            android:src="@drawable/ic_plus"
+            app:fab_size="mini"
+            app:fab_label="@string/add" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimaryLight"
+            app:fab_colorPressed="@color/colorPrimaryPressed"
+            android:src="@drawable/ic_back"
+            app:fab_size="mini"
+            app:fab_label="@string/action_cancel" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_erase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimaryLight"
+            app:fab_colorPressed="@color/colorPrimaryPressed"
+            android:src="@drawable/ic_clear"
+            app:fab_size="mini"
+            app:fab_label="@string/erase" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</android.support.design.widget.CoordinatorLayout>

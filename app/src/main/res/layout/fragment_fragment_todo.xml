@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="false">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/todo_appbar"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <EditText
+                android:id="@+id/todo_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLength="@integer/max_title_lenght"
+                android:inputType="textCapSentences"
+                android:hint="@string/edit_text_title" />
+            <EditText
+                android:id="@+id/todo_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLength="@integer/max_dec_lenght"
+                android:inputType="textLongMessage"
+                android:imeOptions="actionGo"
+                android:hint="@string/edit_text_description" />
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/todo_main">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/todo_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/free_todo_day_layout"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/cool_img_size"
+                android:layout_height="@dimen/cool_img_size"
+                android:src="@mipmap/emotion_cool"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/todo_empty"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

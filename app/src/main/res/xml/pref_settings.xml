@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory />
+    <PreferenceCategory
+        android:title="@string/pref_general">
+        <MultiSelectListPreference
+            android:persistent="false"
+            android:layout="@layout/preference_material"
+            android:entries="@array/wipe_options"
+            android:entryValues="@array/wipe_options"
+            android:key="@string/key_wipe"
+            android:summary="@string/wipe_summary"
+            android:title="@string/wipe_title" />
+        <ListPreference
+            android:key="@string/key_separator"
+            android:layout="@layout/preference_material"
+            android:title="@string/separator_title"
+            android:dialogTitle="@string/separator_summary"
+            android:entries="@array/separators"
+            android:defaultValue="1"
+            android:entryValues="@array/separator_values" />
+        <CheckBoxPreference
+            android:key="@string/key_time_to"
+            android:layout="@layout/preference_material"
+            android:title="@string/time_to_title"
+            android:summary="@string/time_to_summary"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="@string/key_delete_special"
+            android:layout="@layout/preference_material"
+            android:title="@string/del_special_title"
+            android:summary="@string/del_special_summary"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="@string/key_anim"
+            android:layout="@layout/preference_material"
+            android:title="@string/anim_title"
+            android:defaultValue="true"/>
+        <Preference
+            android:persistent="false"
+            android:layout="@layout/preference_material"
+            android:key="@string/key_restore"
+            android:title="@string/restore_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_notif">
+        <CheckBoxPreference
+            android:key="@string/key_use_notif_plans"
+            android:layout="@layout/preference_material"
+            android:title="@string/use_notif_title_plans"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="@string/key_use_notif_special"
+            android:layout="@layout/preference_material"
+            android:title="@string/use_notif_title_special"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:layout="@layout/preference_material"
+            android:key="@string/key_vibrate"
+            android:title="@string/vibrate_title"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_support">
+        <Preference
+            android:persistent="false"
+            android:layout="@layout/preference_material"
+            android:key="@string/key_rate"
+            android:title="@string/rate_title" />
+        <EditTextPreference
+            android:persistent="false"
+            android:layout="@layout/preference_material"
+            android:key="@string/key_report"
+            android:title="@string/report_title"
+            android:positiveButtonText="@string/report_button"
+            android:dialogTitle="@string/report_dtitle"
+            android:dialogMessage="@string/report_dsummary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

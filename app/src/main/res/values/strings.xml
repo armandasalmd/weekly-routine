@@ -1,0 +1,224 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">Weekly Routine</string>
+
+    <!-- navigation drawer titles -->
+    <string name="plans">Week plans</string>
+    <string name="createPlan">Create event</string>
+    <string name="editPlan">Edit event</string>
+    <string name="specialEvents">Special events</string>
+    <string name="todo">To do list</string>
+    <string name="more">Other</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+
+    <!-- about fragmento tekstas -->
+    <string name="about_title">About program</string>
+    <string name="about_btn">Understood!</string>
+
+    <!-- plan list row strings -->
+    <string name="from">from</string>
+    <string name="to">to</string>
+
+    <!-- empty list label -->
+    <string name="free_day_text">This day is free!</string>
+    <string name="no_special_events">No special events!</string>
+    <string name="todo_empty">To do is empty!</string>
+
+    <!-- menu icon titles -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_todo_add">Save</string>
+    <string name="action_locked">Locked</string>
+    <string name="action_unlocked">Unlocked</string>
+
+    <!-- create special labels -->
+    <string name="edit_text_title">Title</string>
+    <string name="edit_text_description">Description</string>
+    <string name="add_event_days">Choose days</string>
+    <string name="add">Add</string>
+    <string name="when">Choose time</string>
+    <string name="erase">Clear</string>
+    <string name="keyboard_close">Close keyboard</string>
+
+
+    <!-- fragment plans labels -->
+    <string name="add_event_timeFrom">From:</string>
+    <string name="add_event_timeTo">To:</string>
+    <string name="add_event_this_day">This day</string>
+
+    <!-- other labels -->
+    <string name="special_list">Special events</string>
+    <string name="special_create">Create new</string>
+    <string name="imeLabel">Add</string>
+    <string name="edit">Edit</string>
+    <string name="go">Go</string>
+
+    <!-- alerts -->
+    <string name="add_success">Successfully added</string>
+    <string name="bad_time">Time was picked incorrectly</string>
+    <string name="blank_title">Title can not be empty</string>
+    <string name="no_days_selected">You had not selected days!</string>
+    <string name="save_success">Successfully saved</string>
+    <string name="date_exits">This date is already added!</string>
+    <string name="horizontal_list_error">You must add at least 1 date!</string>
+
+    <!-- blur fragment -->
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="duration">Duration</string>
+    <string name="date_limit">Dates limit is</string>
+    <string name="time_in_past">This time is in past!</string>
+
+    <string name="use_time_to">Use time to</string>
+    <string name="choose_time">@string/when</string>
+    <string name="delete">Delete</string>
+    <string name="press_button">Press button to change the time</string>
+    <string name="use_notification">Use notifications</string>
+    <string name="create_as_special">Make as special event</string>
+    <string name="dates_limit">Date limit: 10!</string>
+    <string name="close">Close</string>
+    <string name="edit_in_progress">Still in progress mode!</string>
+    <string name="start_tutorial">Do you want to start user guide?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="use_guide">User guide</string>
+
+    <!-- datos ir savaites dienos -->
+    <string-array name="month_names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="short_week_names">
+        <item>Su</item>
+        <item>Mo</item>
+        <item>Tu</item>
+        <item>We</item>
+        <item>Th</item>
+        <item>Fr</item>
+        <item>Sa</item>
+    </string-array>
+    <string-array name="week_names">
+        <item>Monday</item>
+        <item>Tuesday </item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <!-- menu strings -->
+    <string name="sort">Sort by</string>
+    <string name="sort_az">A-Z</string>
+    <string name="sort_za">Z-A</string>
+    <string name="sort_time">Time</string>
+    <string name="delete_no_dates">Delete without dates</string>
+
+    <!-- guide strings -->
+    <string name="guide_canceled">User guide canceled!</string>
+    <string name="guideT_lock">Lock/Unlock page slide</string>
+    <string name="guideD_lock">By the way you can not use event menu while it is locked</string>
+    <string name="guideT_overflow">Other actions</string>
+    <string name="guideD_overflow">You are able to control different actions</string>
+    <string name="guideT_add">Add new events by clicking this button</string>
+    <string name="guideT_event">Casual day plan</string>
+    <string name="guideD_event">which repeats every week until delete</string>
+    <string name="guideT_special">Special event</string>
+    <string name="guideD_special">which is shown just at specific days. You can add it at second menu tab</string>
+    <string name="guideT_longclick">Get more details on long click</string>
+    <string name="guideT_swipe">Sliding to the left lets you to access edit and delete options</string>
+    <string name="guideT_done">Task is done</string>
+    <string name="guideD_done">click this button then you are done</string>
+
+    <string name="plans_description">Constantly hurrying? Create weekly routine and control it with just a few touches</string>
+    <string name="special_description">Add events that happen at particular day and at specific time</string>
+    <string name="todo_description">Without any time limits create and build a compulsory list of jobs</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="key_wipe">wipe</string>
+    <string name="wipe_title">Wipe information</string>
+    <string name="wipe_summary">Selected information will be deleted permanently</string>
+    <string-array name="wipe_options">
+        <item>@string/plans</item>
+        <item>@string/specialEvents</item>
+        <item>@string/todo</item>
+    </string-array>
+
+    <string name="key_separator">seperator</string>
+    <string name="separator_title">Date separator</string>
+    <string name="separator_summary">Choose date separator symbol</string>
+    <string-array name="separators">
+        <item>. (dot)</item>
+        <item>- (dash)</item>
+        <item>/ (slash)</item>
+    </string-array>
+    <string-array name="separator_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="default_separator">. (dot)</string>
+
+    <string name="key_time_to">time_to</string>
+    <string name="time_to_title">Use time to by default</string>
+    <string name="time_to_summary">Auto check \"use time to\" when creating an event</string>
+
+    <string name="key_delete_special">delete_special</string>
+    <string name="del_special_title">Delete special event</string>
+    <string name="del_special_summary">Completely delete event when it is expired</string>
+
+    <string name="key_restore">restore</string>
+    <string name="restore_title">Restore options</string>
+
+    <string name="key_use_notif_plans">notifplans</string>
+    <string name="use_notif_title_plans">Use casual notifications</string>
+
+    <string name="key_use_notif_special">notifspecial</string>
+    <string name="use_notif_title_special">Use special notifications</string>
+
+    <string name="key_vibrate">vibrate</string>
+    <string name="vibrate_title">Make vibration</string>
+
+    <string name="key_rate">rate</string>
+    <string name="rate_title">Rate our app on Google play</string>
+
+    <string name="key_report">report</string>
+    <string name="report_title">Report about problem</string>
+    <string name="report_dtitle">Type info about problem</string>
+    <string name="report_dsummary">Write all steps how you get here and what\'s the problem</string>
+    <string name="report_button">Send</string>
+
+    <string name="pref_general">General</string>
+    <string name="pref_notif">Notifications</string>
+    <string name="pref_support">Support developer</string>
+
+    <string name="key_anim">anim</string>
+    <string name="anim_title">Use animations</string>
+
+    <string name="locked">Locked</string>
+    <string name="unlocked">Unlocked</string>
+
+    <string name="progress">Settings are still in progress!</string>
+    <string name="action_all">Check all as</string>
+    <string name="all_done">Done</string>
+    <string name="all_notdone">Not done</string>
+
+    <string name="mins">min</string>
+    <string name="hours">h</string>
+    <string name="change">Change</string>
+    <string name="choose_day">Select week day</string>
+    <string name="choose">Choose</string>
+
+    <string name="sure">Are you sure?</string>
+</resources>

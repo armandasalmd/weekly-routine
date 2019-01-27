@@ -1,0 +1,200 @@
+<resources>
+    <!-- navigation drawer titles -->
+    <string name="plans">Savaitės planai</string>
+    <string name="createPlan">Sukurti įvykį</string>
+    <string name="editPlan">Redaguoti įvykį</string>
+    <string name="specialEvents">Ypatingi įvykiai</string>
+    <string name="todo">Užduočių sąrašas</string>
+    <string name="more">Kita</string>
+    <string name="settings">Nustatymai</string>
+    <string name="about">Apie</string>
+    <string name="exit">Išeiti</string>
+
+    <!-- about fragmento tekstas -->
+    <string name="about_title">Apie programą</string>
+    <string name="about_btn">Supratau!</string>
+
+    <!-- plan list row strings -->
+    <string name="from">nuo</string>
+    <string name="to">iki</string>
+
+    <!-- empty list label -->
+    <string name="free_day_text">Ši diena yra laisva!</string>
+    <string name="no_special_events">Ypatingų įvykių nėra!</string>
+    <string name="todo_empty">Užduočių nėra!</string>
+
+    <!-- menu icon titles -->
+    <string name="action_cancel">Atšaukti</string>
+    <string name="action_todo_add">Išsaugoti</string>
+    <string name="action_locked">Užrakinta</string>
+    <string name="action_unlocked">Atrakinta</string>
+
+    <!-- create special labels -->
+    <string name="edit_text_title">Pavadinimas</string>
+    <string name="edit_text_description">Aprašymas</string>
+    <string name="add_event_days">Kuriomis dienomis?</string>
+    <string name="add">Pridėti</string>
+    <string name="when">Kada?</string>
+    <string name="erase">Išvalyti</string>
+    <string name="keyboard_close">Uždaryti klaviatūrą</string>
+
+
+    <!-- fragment plans labels -->
+    <string name="add_event_timeFrom">Nuo:</string>
+    <string name="add_event_timeTo">Iki:</string>
+    <string name="add_event_this_day">Ši diena</string>
+
+    <!-- other labels -->
+    <string name="special_list">Sąrašas</string>
+    <string name="special_create">Kūrti naują</string>
+    <string name="imeLabel">Pridėti</string>
+    <string name="edit">Redaguoti</string>
+    <string name="go">Eiti</string>
+
+    <!-- alerts -->
+    <string name="add_success">Sėkmingai pridėta</string>
+    <string name="bad_time">Blogai pasirinktas laikas</string>
+    <string name="blank_title">Pavadinimas negali būti tuščias</string>
+    <string name="no_days_selected">Nepasirinkote dienų!</string>
+    <string name="save_success">Sėkmingai išsaugota</string>
+    <string name="date_exits">Ši data jau pridėta!</string>
+    <string name="horizontal_list_error">Privaloma pridėti bent 1 datą</string>
+
+    <!-- blur fragment -->
+    <string name="date">Data</string>
+    <string name="time">Laikas</string>
+    <string name="duration">Trukmė</string>
+    <string name="date_limit">Datų limitas yra</string>
+    <string name="time_in_past">Šis laikas jau praeityje!</string>
+
+    <string name="use_time_to">Naudoti laiką iki</string>
+    <string name="choose_time">Kokiu laiku?</string>
+    <string name="delete">Trinti</string>
+    <string name="press_button">Paspausk mygtuką ir pakeis laiką</string>
+    <string name="use_notif_title_plans">Naudoti paprastus pranešimus</string>
+    <string name="use_notif_title_special">Naudoti ypatingus pranešimus</string>
+    <string name="create_as_special">Padaryti kaip ypatingą įvykį</string>
+    <string name="dates_limit">Datų limitas: 10!</string>
+    <string name="close">Uždaryti</string>
+    <string name="edit_in_progress">Dar neužbaigėte redagavimo!</string>
+    <string name="start_tutorial">Ar norite pradėti apmokymus?</string>
+    <string name="yes">Taip</string>
+    <string name="no">Ne</string>
+    <string name="use_guide">Naudojimo gidas</string>
+
+    <!-- datos ir savaites dienos -->
+    <string-array name="month_names">
+        <item>Sausis</item>
+        <item>Vasaris</item>
+        <item>Kovas</item>
+        <item>Balandis</item>
+        <item>Gegužė</item>
+        <item>Birželis</item>
+        <item>Liepa</item>
+        <item>Rugpjūtis</item>
+        <item>Rugsėjis</item>
+        <item>Spalis</item>
+        <item>Lapkritis</item>
+        <item>Gruodis</item>
+    </string-array>
+    <string-array name="short_week_names">
+        <item>S</item>
+        <item>P</item>
+        <item>A</item>
+        <item>T</item>
+        <item>K</item>
+        <item>P</item>
+        <item>Š</item>
+    </string-array>
+    <string-array name="week_names">
+        <item>Pirmadienis</item>
+        <item>Antradienis</item>
+        <item>Trečiadienis</item>
+        <item>Ketvirtadienis</item>
+        <item>Penktadienis</item>
+        <item>Šeštadienis</item>
+        <item>Sekmadienis</item>
+    </string-array>
+
+    <!-- menu strings -->
+    <string name="sort">Rūšiuoti pagal</string>
+    <string name="sort_az">A-Z</string>
+    <string name="sort_za">Z-A</string>
+    <string name="sort_time">Laiką</string>
+    <string name="delete_no_dates">Trinti be datų</string>
+
+    <!-- guide strings -->
+    <string name="guide_canceled">Naudojimo gidas atšauktas!</string>
+    <string name="guideT_lock">Užrakink/Atrakink puslapio slinkimą</string>
+    <string name="guideD_lock">Tačiau atrakinus negalėsite naudotis įvykio meniu</string>
+    <string name="guideT_overflow">Kiti veiksmai</string>
+    <string name="guideD_overflow">Galite pasirinkti skirtingus valdymo veiksmus</string>
+    <string name="guideT_add">Pridėk naują įvyki paspaudęs šį mygtuką</string>
+    <string name="guideT_event">Paprastas dienos planas</string>
+    <string name="guideD_event">kuris kartojasi kiekvieną savaitę</string>
+    <string name="guideT_special">Ypatingas įvykis</string>
+    <string name="guideD_special">kuris rodomas tik pasirinktomis dienomis, jį pridėti gali antroje skiltyje</string>
+    <string name="guideT_longclick">Palaikęs ilgiau gali pamatyti pilną įvykio informaciją</string>
+    <string name="guideT_swipe">Slenkant įvykį į kairę gali redaguoti arba ištrinti</string>
+    <string name="guideT_done">Darbas atliktas</string>
+    <string name="guideD_done">spustelk, kad pažymėtum darbą kaip atliktą</string>
+
+    <string name="plans_description">Nuolatos skubi? Susikurt savaitės rutiną ir valdyk ją keliais paspaudimais</string>
+    <string name="special_description">Pridėk įvykius, kurie įvyksta tam tikrą dieną ir tam tikru laiku</string>
+    <string name="todo_description">Nevaržomas laiko susikurt ir susidėliok privalomų atlikti darbų sąrašą</string>
+
+    <string name="wipe_title">Išvalyti informaciją</string>
+    <string name="wipe_summary">Pasirinkta informaciją bus visiškai ištrinta</string>
+    <string-array name="wipe_options">
+        <item>@string/plans</item>
+        <item>@string/specialEvents</item>
+        <item>@string/todo</item>
+    </string-array>
+
+    <string name="separator_title">Datos atskirimas</string>
+    <string name="separator_summary">Pasirinkite datos atskirimo simbolį</string>
+    <string-array name="separators">
+        <item>. (taškas)</item>
+        <item>- (brūkšnys)</item>
+        <item>/ (pasviras brūkšnys)</item>
+        <item>/ (pasviras brūkšnys)</item>
+    </string-array>
+
+    <string name="time_to_title">Naudoti \"laiką iki\" numatytai</string>
+    <string name="time_to_summary">Automatiškai pažymėti \"laiką iki\", kurian įvykį</string>
+
+    <string name="del_special_title">Trinti ypatingą įvykį</string>
+    <string name="del_special_summary">Visiškai ištrinti, kai baigiasi</string>
+
+    <!-- pavieniai -->
+    <string name="restore_title">Atstatyti nustatymus</string>
+    <string name="vibrate_title">Vibruoti</string>
+    <string name="rate_title">Įvertinkite programą Google play</string>
+
+    <string name="report_title">Pranešti apie problemą</string>
+    <string name="report_dtitle">Informacija apie problemą</string>
+    <string name="report_dsummary">Įrašykite visus žingsnius iki problemos ir kokia ji yra</string>
+    <string name="report_button">Siųsti</string>
+
+    <string name="pref_general">Bendri nustatymai</string>
+    <string name="pref_notif">Pranešimai</string>
+    <string name="pref_support">Paremkite kūrėją</string>
+
+    <string name="anim_title">Naudoti animacijas</string>
+
+    <string name="locked">Užrakinta</string>
+    <string name="unlocked">Atrakinta</string>
+    <string name="progress">Nustatymai visdar kuriami!</string>
+
+    <string name="mins">min.</string>
+    <string name="hours">val.</string>
+
+    <string name="all_done">Atliktus</string>
+    <string name="all_notdone">Neatliktus</string>
+    <string name="action_all">Pažymėti visus</string>
+    <string name="change">Pakeisti</string>
+    <string name="choose_day">Pasirinkite dieną</string>
+    <string name="choose">Pasirinkti</string>
+
+    <string name="sure">Ar tikrai?</string>
+</resources>

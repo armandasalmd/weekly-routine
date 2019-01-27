@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="add_event_top_gap">6dp</dimen>
+    <dimen name="add_event_card_margin">6dp</dimen>
+    <dimen name="add_event_cb_wh">42dp</dimen>
+    <dimen name="add_event_cb_marginB">4dp</dimen>
+    <dimen name="add_event_cb_marginLR">4dp</dimen>
+
+    <dimen name="card_content_paddingTB">12dp</dimen>
+    <dimen name="card_content_paddingLR">8dp</dimen>
+
+    <integer name="max_title_lenght">40</integer>
+    <integer name="max_dec_lenght">100</integer>
+
+    <dimen name="time_from_size">18sp</dimen>
+    <integer name="time_from_size_int">18</integer>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="cool_img_size">80dp</dimen>
+    <dimen name="row_marginLeft">12dp</dimen>
+    <dimen name="row_title_size">20sp</dimen>
+
+    <!-- blur fragment -->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="content_text_size">19sp</dimen>
+    <dimen name="button_time_margin">8dp</dimen>
+
+    <!-- material row settings -->
+    <dimen name="row_height">68dp</dimen>
+    <dimen name="half_height">34dp</dimen>
+    <dimen name="text_padding_left">16dp</dimen>
+    <dimen name="extra_list_padding">0dp</dimen>
+    <dimen name="primary_text">16sp</dimen>
+    <dimen name="secondary_text">14sp</dimen>
+    <dimen name="title_text">18sp</dimen>
+    <dimen name="time_from_height">38dp</dimen>
+    <dimen name="time_to_height">30dp</dimen>
+    <dimen name="calendar_height">40dp</dimen>
+</resources>

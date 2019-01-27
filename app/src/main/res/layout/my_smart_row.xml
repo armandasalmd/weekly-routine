@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height"
+    android:clipToPadding="false"
+    app:dragEdge="right"
+    app:mode="normal">
+    <include layout="@layout/swipe_menu_layout" />
+    <RelativeLayout
+        android:id="@+id/row_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rippleRow"
+            android:background="@drawable/ripple_effect"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.29">
+                <TextView
+                    android:id="@+id/time_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/time_from_height"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="@dimen/primary_text" />
+                <TextView
+                    android:id="@+id/time_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/time_to_height"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal|top"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/secondary_text"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/row_divider"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.71"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/row_marginLeft">
+                <TextView
+                    android:id="@+id/mano_text"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/extra_list_padding"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_text" />
+                <TextView
+                    android:id="@+id/mano_dec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/extra_list_padding"
+                    android:ellipsize="middle"
+                    android:maxLines="2"
+                    android:scrollHorizontally="true"
+                    android:textSize="@dimen/secondary_text" />
+            </LinearLayout>
+            <CheckBox
+                android:layout_marginRight="4dp"
+                android:id="@+id/check_done"
+                android:button="@drawable/thumb_checkbox"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:background="@color/row_divider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

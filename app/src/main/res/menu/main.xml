@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cancel"
+        android:orderInCategory="97"
+        android:title="@string/action_cancel"
+        android:icon="@drawable/ic_cancel"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_circle_add"
+        android:orderInCategory="98"
+        android:title="@string/action_todo_add"
+        android:icon="@drawable/ic_plus_circle"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_lock"
+        android:orderInCategory="99"
+        android:title="@string/action_locked"
+        android:checkable="true"
+        android:icon="@drawable/ic_locked"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_no_dates"
+        android:orderInCategory="101"
+        android:title="@string/delete_no_dates"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_sort"
+        android:visible="false"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        android:title="@string/sort" >
+        <menu>
+            <item
+                android:id="@+id/sort_az"
+                android:title="@string/sort_az" />
+            <item
+                android:id="@+id/sort_za"
+                android:title="@string/sort_za"/>
+            <item
+                android:id="@+id/sort_time"
+                android:title="@string/sort_time"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_done"
+        android:visible="true"
+        android:orderInCategory="103"
+        app:showAsAction="never"
+        android:title="@string/action_all" >
+        <menu>
+            <item
+                android:id="@+id/action_alldone"
+                android:orderInCategory="104"
+                android:title="@string/all_done"
+                android:visible="true"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_allnotdone"
+                android:orderInCategory="105"
+                android:title="@string/all_notdone"
+                android:visible="true"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+
+
+
+</menu>

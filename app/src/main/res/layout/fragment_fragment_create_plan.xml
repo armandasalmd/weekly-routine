@@ -1,0 +1,159 @@
+<RelativeLayout android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGreyLight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_scroll"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/add_event_top_gap">
+            <include layout="@layout/type_info_card" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/add_event_card_margin"
+                android:layout_marginLeft="@dimen/add_event_card_margin"
+                android:layout_marginRight="@dimen/add_event_card_margin">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    style="@style/Widget.CardContent">
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:id="@+id/const_day"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/text_day_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                        <TextView
+                            android:id="@+id/dialog_for_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:padding="4dp"
+                            android:text="@string/change"
+                            android:textColor="@color/colorAccent"
+                            android:clickable="true"
+                            android:background="@drawable/ripple_change"
+                            android:focusable="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/day_select_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_event_days"
+                                android:layout_gravity="top"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox_this_day"
+                                android:checked="true"
+                                android:text="@string/add_event_this_day" />
+                        </LinearLayout>
+                        <com.armandasalmd.weeklyroutine.ToggleButtonsManager
+                            android:orientation="horizontal"
+                            android:id="@+id/toogle_layout"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                            <ToggleButton
+                                style="@style/check_button_style" />
+                        </com.armandasalmd.weeklyroutine.ToggleButtonsManager>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <include layout="@layout/time_choose_card" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/add_event_card_margin"
+                android:layout_marginLeft="@dimen/add_event_card_margin"
+                android:layout_marginRight="@dimen/add_event_card_margin">
+                <LinearLayout android:layout_height="wrap_content"
+                    style="@style/Widget.CardContent"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="@string/settings"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/time_to_check"
+                            android:text="@string/use_time_to"
+                            android:checked="false" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/use_notification"
+                            android:text="@string/use_notification"
+                            android:checked="true" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/like_special"
+                            android:text="@string/create_as_special"
+                            android:checked="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:background="@color/colorAccent"
+        android:id="@+id/colorView"/>
+</RelativeLayout>

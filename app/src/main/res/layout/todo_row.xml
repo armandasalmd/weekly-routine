@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height"
+    app:dragEdge="right"
+    app:mode="normal">
+    <include layout="@layout/swipe_menu_layout" />
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:id="@+id/todoRelative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:focusable="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/todoRipple"
+            android:background="@drawable/ripple_effect"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/text_padding_left"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/todo_text_title"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    style="@style/rowTextNormal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_padding_left"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="-3dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_gravity="top"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/primary_text"
+                    android:id="@+id/todo_text_dec"/>
+            </LinearLayout>
+            <CheckBox
+                android:layout_marginRight="4dp"
+                android:id="@+id/check_done"
+                android:button="@drawable/thumb_checkbox"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_reorder"
+                android:contentDescription="@string/todo" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:background="@color/row_divider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+

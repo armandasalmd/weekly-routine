@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ButtonStyle"
+    android:layout_marginBottom="@dimen/add_event_card_margin"
+    android:layout_marginLeft="@dimen/add_event_card_margin"
+    android:layout_marginRight="@dimen/add_event_card_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="wrap_content"
+        style="@style/Widget.CardContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/choose_time"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button android:layout_height="wrap_content"
+                android:id="@+id/button_time_from"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/button_time_margin"
+                android:layout_marginRight="@dimen/button_time_margin"
+                android:text="@string/from"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button_time_to"
+                android:layout_marginLeft="@dimen/button_time_margin"
+                android:layout_marginRight="@dimen/button_time_margin"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:enabled="false"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <View
+            android:layout_margin="6dp"
+            android:background="@color/greay_semi_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:text="@string/press_button"
+            android:textSize="@dimen/secondary_text"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
